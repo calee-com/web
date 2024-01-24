@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: #f4f4f4;
+    /* Light gray background */
+    background-image: url('Images/gym_1.PNG');
+    color: #333;
+    /* Dark text color */
+}
+
+header,
+section,
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #3498db;
+    /* Blue header, section, and footer background */
+    color: #fff;
+    /* White text color */
+}
+
+section {
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #2ecc71;
+    /* Green button background */
+    color: #fff;
+    /* White text color */
+    border: none;
+}
+
+button:hover {
+    background-color: #27ae60;
+    /* Darker green on hover */
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #34495e;
+    /* Dark gray footer background */
+}
+
+footer p {
+    color: #ecf0f1;
+    /* Light gray text color in the footer */
+}
+
+/* Add this CSS for a fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add CSS animations here */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animations to specific sections */
+#home {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#bmi {
+    animation: slideUp 1s ease-in-out;
+}
+
+#footer {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    /* Adjust the height as needed */
+    background-color: #cc1385;
+    /* Background color of the footer */
+}
+
+#imageContainer {
+    display: flex;
+    animation: slideImages 10s infinite linear;
+}
+
+.gym-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+}
+
+@keyframes slideImages {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(0.6);
+    }
+
+    75% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

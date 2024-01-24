@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ICT502 Internet and Web Development</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Gym Website!</h1>
+    </header>
+
+    <section id="home">
+        <h2>PeakFit Hub: Elevate Your Fitness Journey</h2>
+        <p>
+            Welcome to our Fitness Oasis – where your wellness journey begins!
+            we're more than just a gym; we're a community dedicated to helping
+            you achieve your fitness goals and embrace a healthier lifestyle.</p>
+        <p>Explore our diverse range of classes, cutting-edge facilities, and personalized
+            training programs tailored to meet your unique needs. Join us on a path to better health,
+            increased energy, and a stronger, happier you.</p>
+
+    </section>
+
+    <section id="bmi">
+        <h2>BMI Calculator</h2>
+        <form id="bmiForm">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" required>
+
+            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+
+            <p id="result"></p>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="button" onclick="sendEmail()">Send Email</button>
+        </form>
+        <p>Contact us for any inquiries or feedback. We'd love to hear from you!</p>
+    </section>
+
+    <footer id="footer">
+        <div id="imageContainer">
+            <!-- Add gym images here -->
+            <img class="gym-image" src="Images/gym_2.jpg" alt="Gym Image 2">
+            <img class="gym-image" src="Images/gym_3.jpg" alt="Gym Image 3">
+            <img class="gym-image" src="Images/gym_2.jpg" alt="Gym Image 2">
+            <img class="gym-image" src="Images/gym_3.jpg" alt="Gym Image 3">
+            <img class="gym-image" src="Images/gym_2.jpg" alt="Gym Image 2">
+            <img class="gym-image" src="Images/gym_3.jpg" alt="Gym Image 3">
+            <img class="gym-image" src="Images/gym_2.jpg" alt="Gym Image 2">
+            <img class="gym-image" src="Images/gym_3.jpg" alt="Gym Image 3">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
